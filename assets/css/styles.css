@@ -1,0 +1,89 @@
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.navbar {
+    margin: 10px 0;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+.brand-name {
+    font-family: 'Josefin Slab', serif;
+    font-size: 47px;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+}
+
+.nav-container {
+    padding-top: 8px;
+}
+
+.navbar-custom {
+    font-size: 20px;
+    background-color: #FFF;
+}
+
+div#response {
+    color: #333;
+    border: 1px solid #404040;
+    width: 360px;
+    margin: 0 auto 20px auto;
+    height: auto;
+    padding: 10px 10px 10px 70px;
+    min-height: 45px;
+}
+div#response p {
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.error {
+    background: red;
+}
+.success {
+    background: green;
+}
+.processing {
+    background: yellow;
+}
+
+.errorStyle{
+    color: red;
+}
