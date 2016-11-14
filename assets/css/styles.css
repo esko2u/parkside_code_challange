@@ -87,3 +87,7 @@ div#response p {
 .errorStyle{
     color: red;
 }
+.closeBtn{
+    padding: 8px;
+    margin: 8px;
+}
