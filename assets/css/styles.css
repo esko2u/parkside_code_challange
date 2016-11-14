@@ -1,6 +1,5 @@
 div.container {
     width: 100%;
-    border: 1px solid gray;
 }
 
 header, footer {
@@ -32,6 +31,10 @@ article {
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
+}
+
+#submit{
+    float:right;
 }
 
 .navbar {
