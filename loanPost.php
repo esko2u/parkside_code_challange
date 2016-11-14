@@ -47,14 +47,12 @@ VALUES ($loanAmount, $properyValue, $socialId)";
             $last_id = $conn->insert_id;
             $gets = true;
         }
-
         $conn->close();
 
         $return['error'] = false;
         $return['msg'] = "<p>Loan data returned.</p>".$error_message;
         $return['loanID'] = $last_id;
         $return['loanStatus'] = "Accepted";
-        $return['gets'] = $gets;
 
         echo json_encode($return);
     }
