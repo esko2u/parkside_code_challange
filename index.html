@@ -11,46 +11,44 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-<!--Input-->
-<!-- Loan Amount-->
-<!-- Property Value-->
-<!-- Social Security-->
-
-<!--Output-->
-<!-- Loan ID-->
-<!-- Loan Status (Accepted, Rejected, etc.)-->
-
-<!--Rule-->
-<!-- If Loan to Value (LTV) is greater than 40%, we cannot accept the loan.-->
-<!-- Validate data-->
-
 <div class="container">
-
-    <div class="row">
+    <div class="row center-block">
         <a href="index.html"><img class="img-responsive2" src="assets/img/logo.png"></a>
     </div>
 
     <form id="loanForm" action="loanPost.php" enctype="multipart/form-data" method="post">
-        <div class="form-group">
-            <label for="loanAmount">Loan Amount</label>
-            <input type="text" class="form-control" id="loanAmount" name="loanAmount" placeholder="Enter loan amount" required>
-            <div id="amountErr" class="errorStyle"></div>
-            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="loanAmount">Loan Amount</label>
+                    <input type="text" class="form-control" id="loanAmount" name="loanAmount" placeholder="Enter loan amount" required>
+                    <div id="amountErr" class="errorStyle"></div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="propertyValue">Property Value</label>
-            <input type="text" class="form-control" id="propertyValue" name="propertyValue" placeholder="Enter Property Value" required>
-            <div id="valueErr" class="errorStyle"></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="propertyValue">Property Value</label>
+                    <input type="text" class="form-control" id="propertyValue" name="propertyValue" placeholder="Enter Property Value" required>
+                    <div id="valueErr" class="errorStyle"></div>
+                </div>
+            </div>
         </div>
-
-        <div class="form-group">
-            <label for="socialId">Social Security</label>
-            <input type="text" class="form-control" id="socialId" name="socialId" placeholder="Enter your Social Security Number" required>
-            <div id="ssnErr" class="errorStyle"></div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="socialId">Social Security</label>
+                    <input type="text" class="form-control" id="socialId" name="socialId" placeholder="Enter your Social Security Number" required>
+                    <div id="ssnErr" class="errorStyle"></div>
+                </div>
+            </div>
         </div>
-
-        <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+        <div class="row">
+            <div class="col-sm-4">
+                <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
     </form>
 
     <div class="modal fade" id="your-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
